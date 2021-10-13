@@ -1,7 +1,7 @@
 use warp::Filter;
 
 #[tokio::main]
-pub async fn main() {
+pub async fn serve() {
     // GET /hello/warp => 200 OK with body "Hello, warp!"
     let hello = warp::path!("hello" / String)
         .map(|name| format!("Hello, {}!", name));
