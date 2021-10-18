@@ -802,6 +802,7 @@ name = "test-rust"
 version = "0.1.0"
 dependencies = [
  "json",
+ "rand 0.8.4",
  "tokio",
  "warp",
 ]
